@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="shortUriApp" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>URL Shortner Microservice Challenge</title>
+    <!--<link rel="stylesheet" href="/style.css">-->
+    
+    <!-- Bootstrap Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Pacifico|Wendy+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Orbitron" rel="stylesheet">
+
+     <link rel="stylesheet" href="css/style.css">
+
+    <!--Angular latest-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <!--Angular previous @theTop-->
+
+    <!-- jQuery Core 3.1.1 minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Bootstrap Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+
+  </head>
+  <body class="text-center">
+    <header class="container">
+      <h3> URL Shortner Microservice</h3>
+      <h4><a href="https://www.freecodecamp.org/" target="blank">www.freecodecamp.org</a></h4>
+
+      <a href="https://github/LutLas/url_shortener_microservice" target="blank"><img src="https://cdn.glitch.com/7cf205a0-8754-4fff-910d-a24adb64e2a7%2FRealBrandTrans.png?v=1569823971441" width="200"></a>
+    </header>
+    
+    <section ng-controller="shortAppCtrl" class="footer">
+      <h4>Test Out Microservice</h4>
+      
+      <input placeholder=" Enter URL" ng-model="urlToShorten">
+       <a class="btn btn-primary" ng-href="/new/{{urlToShorten}}">Get Short URL</a>
+
+
+    </section>
+  </body>
+</html>
