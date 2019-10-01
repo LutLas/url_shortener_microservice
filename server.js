@@ -11,7 +11,7 @@ let shortUrl = require("./models/shortUrl");
 app.use(cors());
 
 //connect to database
-let myURI = "mongodb+srv://aboyum:Supalut101.@cluster0-dxftv.gcp.mongodb.net/test?retryWrites=true&w=majority";
+let myURI = "";
 process.env.MONGO_URI=myURI;
 mongoose.set('useNewUrlParser', true)
 mongoose.set('useFindAndModify', true)
